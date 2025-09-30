@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Matt's Extension",
+    "version": "0.0.1",
+    "description": "This extension does completely nothing right now",
+    "permissions": ["scripting", "tabs"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Matt's Extension",
+        "default_icon": {
+            "16": "assets/mLogo.png"}
+    },
+    "icons": {
+        "16": "assets/mLogo.png"
+    }
+
+
+}
