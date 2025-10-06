@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "manifest_version": 3,
     "name": "Matt's Extension",
     "version": "0.0.1",
@@ -16,4 +17,28 @@
     }
 
 
+=======
+    "name": "Adblockx",
+    "version": "1.0",
+    "description": "first attempt at an adblocker + using git",
+    "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "b.js"
+    },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+    "icons": {
+        "16": "icons/i.png",
+        "48": "icons/i.png",
+        "128": "icons/i.png"
+    },
+    "manifest_version": 3
+>>>>>>> 8e4a214 (First Commit)
 }
